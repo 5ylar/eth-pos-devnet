@@ -20,8 +20,8 @@ services:
 
   # Sets up the genesis configuration for the go-ethereum client from a JSON file.
   geth-genesis:
-    # image: "ethereum/client-go:latest"
-    image: "gethtest:latest"
+    image: "ethereum/client-go:latest"
+    # image: "gethtest:latest"
     command: --datadir=/execution init /execution/genesis.json
     volumes:
       - ./execution:/execution

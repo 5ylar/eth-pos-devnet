@@ -40,8 +40,8 @@ services:
   # Runs the go-ethereum execution client with the specified, unlocked account and necessary
   # APIs to allow for proof-of-stake consensus via Prysm.
   geth:
-    # image: "ethereum/client-go:latest"
-    image: "gethtest:latest"
+    image: "ethereum/client-go:latest"
+    # image: "gethtest:latest"
     command:
       - --http
       - --http.api=eth,net,web3
